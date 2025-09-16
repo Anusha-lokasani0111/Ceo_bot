@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEO Direct Connect</title>
+  <link rel="stylesheet" href="/static/employee.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Chat Section -->
+    <div class="chat-section">
+      <div class="chat-header">Chat with CEO</div>
+      <div class="chat-messages" id="chat">
+        <div class="message bot">Hello! Your message goes directly to the CEO.</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="message" placeholder="Type your message..." />
+        <button class="send-btn" onclick="sendMessage()">send</button>
+      </div>
+      <button class="check-replies-btn" onclick="checkReplies()">Check Replies</button>
+    </div>
+
+    <!-- Emergency Section -->
+    <div class="emergency-section">
+      <div class="emergency-header">Emergency Contact</div>
+      <div class="emergency-content">
+        <p>For immediate CEO attention</p>
+        <button class="emergency-btn" onclick="emergencyCall()">Emergency Call</button>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-section">
+      <div class="video-header">Video Conference</div>
+      <div class="video-content">
+        <div class="video-placeholder">1920 × 1080</div>
+        <button class="schedule-btn" onclick="showScheduleModal()">Schedule Meeting</button>
+        <button class="call-btn" onclick="startVideoCall()">Start Video Call</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div id="schedule-modal" class="modal">
+    <div class="modal-content">
+      <h3>Schedule Meeting</h3>
+      <input type="text" id="meeting-date" placeholder="e.g., Tomorrow 2:00 PM" />
+      <button onclick="scheduleMeeting()">OK</button>
+      <button onclick="closeModal()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="/static/employee.js"></script>
+</body>
+</html>

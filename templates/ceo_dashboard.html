@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEO Dashboard</title>
+  <link rel="stylesheet" href="/static/ceo.css" />
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <div class="dashboard-header">
+      <h1>CEO Dashboard</h1>
+      <p>Real-time communication center</p>
+      <button class="refresh-btn" onclick="loadDashboardData()">Refresh</button>
+    </div>
+
+    <!-- Active Calls -->
+    <div class="section">
+      <h2>Active Calls</h2>
+      <div id="calls-container">
+        <p class="no-data">No active calls</p>
+      </div>
+    </div>
+
+    <!-- Scheduled Meetings -->
+    <div class="section">
+      <h2>Scheduled Meetings</h2>
+      <div id="scheduled-container">
+        <p class="no-data">No scheduled meetings</p>
+      </div>
+    </div>
+
+    <!-- Messages -->
+    <div class="section">
+      <h2>Messages</h2>
+      <div id="messages-container">
+        <p class="no-data">No messages yet</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reply Modal -->
+  <div id="reply-modal" class="modal">
+    <div class="modal-content">
+      <h3>Reply to Employee</h3>
+      <textarea id="reply-text" placeholder="Type your reply..."></textarea>
+      <button onclick="sendReply()">Send</button>
+      <button onclick="closeModal()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="/static/ceo.js"></script>
+</body>
+</html>
