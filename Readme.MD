@@ -93,7 +93,7 @@ The browser will automatically open to:
    `"My salary hasn’t been credited for two months."` (because salary is marked as urgency)
 
 2. **Bot** detects urgency and offers:  
-   `"✅ CEO is available! Join the video call now: https://meet.jit.si/CEO-1234"`
+   `"CEO is available! Join the video call now: https://meet.jit.si/CEO-1234"`
 
 3. **CEO** opens the dashboard and sees the message plus the live call option.
 
